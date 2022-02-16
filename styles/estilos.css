@@ -1,0 +1,64 @@
+/* Selectores*/
+
+/*selector universal *.
+   
+    se usa para aplicar unas propiedades a todos los elemntos de la pagina web.
+
+*/
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Selector de etiquetas*/
+
+h1{
+    background: rgb(101, 80, 150);
+    color: white;
+    padding: 10px;
+}
+
+h2{
+
+    background: rgb(238, 228, 228);
+    color: rgb(151, 136, 187);
+}
+
+a{
+    text-decoration: none;
+    font-size: 15px;
+}
+
+footer a{
+color: purple;
+}
+
+/*selector de id 
+    se usa para dar estilo a los componenetes que tienen un id*/
+
+
+#descripcion{
+    padding: 15px;
+    margin: 5px;
+    border: purple solid;
+    border-radius: 10px;
+}
+
+/* selector de clase
+   usafdos para dar formato a los componentes que tienen asociada una clase*/
+
+.parrafoUno{
+    font-style:  italic;
+}
+
+.parrafoDos{
+    font-style: italic;
+}
+
+.parrafoTres{
+    font-style: italic;
+}
+.parrafoCuatro{
+    font-style: italic;
+}
+
