@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="user.png">
+    <title >Curso de Desarrollo web</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+  <marquee>
+    <p><h2>BIENVENIDO AL CURSO DE DESARROLLO WEB CON NUEVAS TECNOLOGIÁS</h2> </p>
+  </marquee>
+    <!-- Formulario simple que enviará una petición GET -->
+    <form action="action_page.php" method="post">
+      <div class="imgcontainer">
+        <img src="user.png" alt="Avatar" class="avatar">
+      </div>
+    
+      <div class="container">
+        <label for="uname"><b>USUARIO:</b></label>
+        <input type="text" placeholder="Por favor ingrese su usuario" name="uname" required>
+    
+        <label for="psw"><b>CONTRASEÑA:</b></label>
+        <input type="password" placeholder="Por favor ingrese su contraseña" name="psw" required>
+    
+        <button type="submit"> <a href="desarrollo.html">INGRESAR</a> </button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> RECORDARME
+        </label>
+      </div>
+    
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">CANCELAR</button>
+        <span class="psw">¿Has olvidado tu <a href="#">contraseña?</a></span>
+      </div>
+    </form>
+</body>
+</html>
