@@ -1,0 +1,116 @@
+const Libros = {
+    libro1: {
+    Titulo: 'Desarrollo Web',
+    Autor : 'Nelson Benitez',
+    AñoPublicación: 2019,
+    Descripción:'Problemas JavaScript'},
+
+    Libro2: {
+        Titulo: 'JavaScript',
+        Autor : 'Pascual Bravo',
+        AñoPublicación: 2020,
+        Descripción:'Objetos en JavaScript'},
+    }
+
+    const numeros =[1,2,3,4,5,6,7];
+//reduce = nuevo dato (reducción de un array)
+    const suma = numeros.reduce((acumulador,valorActual) => {
+        return acumulador + valorActual;
+    });
+
+// forEach = cambiar cada uno de los elementos
+    console.log(suma);
+
+    const sumaDos = numeros.forEach((numeroActual)=>{
+
+        console.log(numeroActual+numeroActual);
+    })
+
+    const books =[Libros.libro1, Libros.Libro2];
+
+    const manipularObjetto = books.forEach((Libros)=>{
+        //console.log(Libros);
+        //return Libros.Descripción;
+        let nuevaDescripcion = "Hola";
+        Libros.Descripción = nuevaDescripcion;
+        console.log(Libros);
+    });
+
+    const nombres = ["Juan", "Camilo", "José"];
+
+    const numerosMap = numeros.map ((valor)=>{
+        return valor*valor;
+    });
+//map= genera un nevo arreglo (con la manipulación)
+    console.log(numerosMap);
+
+    const manipularNombres = nombres.map((nombre)=>{
+        return `${nombre} se unio al juego y tiene ${nombre.length}letras;`;
+    });
+
+    console.log(manipularNombres);
+
+    const carroNuevo = (model, colores, valores)=>{
+        return{
+            modelo: model,
+            color: colores,
+            costo: valores
+
+        }
+    }
+
+    console.log(carroNuevo(2013, "Azul", 230000000));
+
+    // clases
+
+    class cancion{
+        constructor(){
+            this.titulo;
+            this.autor;
+        }
+    reproducir(){
+        console.log("La canción se esta reproduciendo");
+    }
+
+    detenerReproducion(){
+        console.log("Se detuvo la reproducción");
+    }
+}
+
+
+//Herencia 
+//CLASE PADRE
+class medios{
+    constructor(informacion){
+        this.AñoPublicación = informacion.AñoPublicación;
+        this.nombre =informacion.nombre;
+    }
+    informacion(){
+        console.log(`Año publicación: ${this.AñoPublicación}`);
+    }
+}
+
+//CLASE HIJA
+
+class Song extends medios{
+    constructor (datosCancion){
+        super(datosCancion);
+        this.artista =datosCancion.artista;
+    }
+
+    reproducir(){
+            console.log(`artista ${this.artista}, nombre: ${this.nombre}`);
+        }
+    }
+
+
+
+const miCancion = new Song({
+    artista : "Quenn",
+    nombre : "Bohemian Rhapsody",
+    AñoPublicación: 1970
+
+});
+
+//const miCancion = new cancion();
+miCancion.reproducir();
