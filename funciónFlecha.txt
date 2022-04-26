@@ -1,0 +1,16 @@
+var celulares = {
+  nombre: 'Huawei',
+  getNombreFlecha: () => console.log(this.nombre),
+  getNombreNormal: function() {
+    console.log(this.nombre);
+  }
+}
+
+celulares.getNombreFlecha();
+
+
+celulares.getNombreNormal();
+
+
+var nombreCel = celulares.getNombreNormal();
+console.log("nombreCel: " + nombreCel);
